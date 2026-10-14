@@ -1,0 +1,10 @@
+Bidirectional Traceability in DO-178C
+Source: Public summary written for this portfolio starter. For authoritative text, consult RTCA DO-178C.
+
+Bidirectional traceability is one of the most audited aspects of DO-178C. Every software requirement must trace upward to the system requirement or design element it refines, and downward to the design, code, and test cases that implement and verify it. Auditors follow these links in both directions.
+
+Top-down traceability answers: is every requirement implemented and tested? If a requirement has no linked test case, verification is incomplete. Bottom-up traceability answers: is every line of code and every test justified by a requirement? Code with no parent requirement is either dead code, which must be removed, or deactivated code, which must be shown to be unreachable in the certified configuration.
+
+Traceability data is typically maintained in a requirements management tool, and the trace matrices are generated as verification evidence. Gaps found late are expensive: adding a missing test during the final verification phase can trigger re-reviews of the requirement, the design, and the code.
+
+The discipline transfers directly to AI systems: knowing which training data, which prompt version, and which evaluation produced a given behavior is the same traceability problem in a new domain.

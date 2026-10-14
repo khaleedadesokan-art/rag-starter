@@ -1,0 +1,16 @@
+DO-178C Software Levels (A through E)
+Source: Public summary written for this portfolio starter. For authoritative text, consult RTCA DO-178C.
+
+DO-178C defines five software levels based on the severity of a failure condition that the software could cause or contribute to. The level determines how many objectives must be satisfied.
+
+Level A applies when a failure would cause a catastrophic failure condition for the aircraft, meaning it would prevent continued safe flight and landing. Level A carries the most objectives: 71 total, of which 30 require independence (verification performed by someone other than the author).
+
+Level B applies to hazardous failure conditions, where a failure has a large negative impact on safety or the crew's ability to cope. Level B requires 69 objectives.
+
+Level C applies to major failure conditions, which significantly reduce safety margins or increase crew workload. Level C requires 62 objectives.
+
+Level D applies to minor failure conditions, which slightly reduce safety margins or slightly increase workload. Level D requires 26 objectives.
+
+Level E applies when a failure has no effect on operational capability or pilot workload. No DO-178C objectives apply to Level E, though the software is still identified and controlled.
+
+The key principle: higher criticality means more verification rigor, more independence, and more documented evidence — not different development methods.

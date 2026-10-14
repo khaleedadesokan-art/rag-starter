@@ -1,0 +1,10 @@
+DO-178C Verification: Reviews, Analyses, and Tests
+Source: Public summary written for this portfolio starter. For authoritative text, consult RTCA DO-178C.
+
+DO-178C verification is built on three pillars: reviews, analyses, and tests. Reviews check documents and artifacts against standards and requirements. Analyses use reasoning or tools to check properties like timing, stack usage, or data flow. Tests execute the software and compare actual results to expected results.
+
+Test coverage criteria scale with software level. For Level A, Modified Condition/Decision Coverage (MC/DC) is required: every condition in a decision must be shown to independently affect the decision's outcome. For Level B, decision coverage is required. For Level C, statement coverage is required. Levels D and E have no structural coverage objectives, though requirements-based testing still applies at Level D.
+
+Requirements-based testing is the foundation at every level that has test objectives: each software requirement must have test cases, test procedures, and test results. Structural coverage is never a substitute for requirements-based tests; it is a measure of how thoroughly those tests exercised the code structure, and any uncovered structure must be analyzed to determine whether it indicates missing requirements, dead code, or deactivated code.
+
+Verification also requires independence at higher levels: for Level A, the person verifying an artifact cannot be its author. This is the same discipline as independent V&V in systems engineering.

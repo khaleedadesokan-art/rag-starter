@@ -1,0 +1,10 @@
+ARP4754A and Development Assurance Levels
+Source: Public summary written for this portfolio starter. For authoritative text, consult SAE ARP4754A.
+
+SAE ARP4754A covers the development assurance process for aircraft and systems. It works top-down: starting from aircraft-level functions, it flows requirements and safety assessments down through systems to hardware and software items.
+
+A central concept is the Development Assurance Level, or DAL, assigned from A (most critical) to E. The DAL for a system is derived from the Functional Hazard Assessment and the Preliminary System Safety Assessment. The DAL then flows down: the software DAL assigned to a software component generally matches the DAL of the system function it implements, and it maps directly onto the DO-178C software level (DAL A means DO-178C Level A).
+
+ARP4754A emphasizes that DAL allocation is not just labeling. It drives architectural decisions: partitioning, redundancy, and dissimilarity are used so that a single failure cannot defeat a critical function. When two functions share a processor, for example, robust partitioning must be demonstrated so a lower-DAL function cannot interfere with a higher-DAL one.
+
+The standard also requires validation that the system requirements are correct and complete, not just that the implementation matches them. Verification shows you built the thing right; validation shows you built the right thing. Both are needed for certification.

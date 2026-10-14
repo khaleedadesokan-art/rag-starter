@@ -1,0 +1,10 @@
+FAA Advisory Circular AC 20-115D
+Source: Public summary written for this portfolio starter. For authoritative text, consult the FAA.
+
+FAA Advisory Circular 20-115D recognizes RTCA DO-178C as an acceptable means of compliance for the software aspects of airborne systems certification. In plain terms: if you develop and verify your software per DO-178C, the FAA accepts that as showing compliance with the airworthiness regulations for software.
+
+AC 20-115D also addresses the DO-178C supplements. It recognizes DO-330 for software tool qualification, DO-331 for model-based development and verification, DO-332 for object-oriented technology, and DO-333 for formal methods. Each supplement adds or modifies objectives that apply when those technologies are used.
+
+An important note in the circular: applicants must document which software level applies to each software component and show traceability from system safety assessments down to the software requirements. The circular does not itself grant approval; it tells applicants what the FAA will find acceptable, and the actual finding of compliance happens through the certification project with the FAA or a designee.
+
+When a project uses DO-178C, the Plan for Software Aspects of Certification (PSAC) is submitted early so the certification authority agrees on the approach before most of the verification work is done.

@@ -1,0 +1,10 @@
+DO-330 Software Tool Qualification
+Source: Public summary written for this portfolio starter. For authoritative text, consult RTCA DO-330.
+
+DO-330 qualifies software tools used in DO-178C projects. Tools are classified by what they do and what could go wrong if they misbehave. Development tools can insert errors into the airborne software, for example a code generator. Verification tools cannot insert errors but might fail to detect them, for example a test coverage tool.
+
+Tool Qualification Levels (TQL) run from TQL-1 (most rigorous) to TQL-5. The TQL needed depends on the tool's classification and the software level of the airborne software it supports. A development tool used on Level A software needs TQL-1, which is roughly as demanding as qualifying the tool with the same rigor as the airborne software itself.
+
+Qualification is documented in a Tool Qualification Plan and a Tool Accomplishment Summary, mirroring the PSAC and SAS used for the airborne software. The key evidence: tool operational requirements, verification of those requirements, and configuration management of the tool itself.
+
+A practical point: many teams avoid TQL-1 by choosing verification tools over development tools where possible, or by manually verifying the outputs of a development tool so the tool itself needs less qualification. Tool strategy is a cost decision as much as a technical one.
